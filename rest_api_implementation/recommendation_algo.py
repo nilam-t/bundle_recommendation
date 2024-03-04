@@ -15,10 +15,7 @@ def print_Description_of_StockCode(data, stock_code):
   return description
 
 
-### rewrite this function
 def obtain_recommendations(stock_code, rules, recommendation_count):
-  #print(f'Here stock_code {stock_code}')
-  #print(rules.head())
   sorted_rules = rules.sort_values('lift', ascending=False, ignore_index=True)
   product_ids, product_lift = [], []
   for i, product in sorted_rules['antecedents'].items():
@@ -41,16 +38,5 @@ def print_recommendations(stock_code, data, rules, recommendation_count):
   recommended_stock_codes = obtain_recommendations(stock_code, rules, recommendation_count)
   print(recommended_stock_codes)
   recommended_product_description = print_Description_of_StockCode(data, recommended_stock_codes)
-  #print(f'Product ID : {stock_code} \nProduct Name: {product_name}')
-  #print(f'Recommended-product IDs : {recommended_stock_codes} \nRecommended-product Names: {recommended_product_description}')
 
   return product_name, recommended_product_description
-
-#data_pkl = pd.read_pickle("filtered_dt.pkl")
-#rules_pkl = pd.read_pickle("rules.pkl")
-
-#print(data_pkl.shape)
-#print(rules_pkl.shape)
-
-#rec_id = print_recommendations('23235',data_pkl,rules_pkl,5)
-#rec_id = print_recommendations('21987',data_pkl,rules_pkl,5)

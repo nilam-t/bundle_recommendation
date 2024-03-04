@@ -4,13 +4,13 @@ from recommendation_algo import print_recommendations
 import traceback
 import pandas as pd
 
-# Your API definition
+# API definition
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
     return '''<h1>Bundle Recommender</h1>
-                <p>A REST api implementation for product-bundle recommendation   </p>'''
+                <p>A REST API implementation for product-bundle recommendation   </p>'''
 
 @app.route('/recommend', methods=['POST'])
 def predict():
@@ -29,13 +29,9 @@ def predict():
         return jsonify({'trace': traceback.format_exc()})
 
 if __name__ == '__main__':
-    try:
-        port = int(sys.argv[1]) # This is for a command-line input
-    except:
-        port = 5000 # If you don't provide any port the port will be set to 5000
 
     data_pkl = pd.read_pickle("filtered_dt.pkl")
     rules_pkl = pd.read_pickle("rules.pkl")
     print ('Model loaded')
 
-    app.run(host='0.0.0.0',port=port, debug=True)
+    app.run(host='0.0.0.0',port=5000, debug=True)

@@ -1,0 +1,24 @@
+INFO:root:{'productID': '22747', 'b': 4, 'logfile': 'info.log'}
+INFO:root:Data extracted
+INFO:root:Data Loaded
+INFO:root:Data Preprocessing done
+INFO:root:Frequent itemsets are generated
+INFO:root:Association rules are obtained
+INFO:root:Product ID : 22747 
+Product Name: ["POPPY'S PLAYHOUSE BATHROOM"]
+INFO:root:Bundle No: 1 Recommended-product IDs : ['22745', '22746', '22748'] 
+Recommended-product Names: ["POPPY'S PLAYHOUSE BEDROOM ", "POPPY'S PLAYHOUSE LIVINGROOM ", "POPPY'S PLAYHOUSE KITCHEN"]
+INFO:root:Bundle Total Price (in Sterling): 8.40
+
+INFO:root:Bundle No: 2 Recommended-product IDs : ['22745', '22746'] 
+Recommended-product Names: ["POPPY'S PLAYHOUSE BEDROOM ", "POPPY'S PLAYHOUSE LIVINGROOM "]
+INFO:root:Bundle Total Price (in Sterling): 6.30
+
+INFO:root:Bundle No: 3 Recommended-product IDs : ['22746', '22748'] 
+Recommended-product Names: ["POPPY'S PLAYHOUSE LIVINGROOM ", "POPPY'S PLAYHOUSE KITCHEN"]
+INFO:root:Bundle Total Price (in Sterling): 6.30
+
+INFO:root:Bundle No: 4 Recommended-product IDs : ['22746'] 
+Recommended-product Names: ["POPPY'S PLAYHOUSE LIVINGROOM "]
+INFO:root:Bundle Total Price (in Sterling): 4.20
+
