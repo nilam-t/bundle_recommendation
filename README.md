@@ -4,8 +4,6 @@ This is the source code repository for the recommender system using Associate Ru
 
 This project implements a rule based machine learning algorithm for finding patterns and enabling product bundle recommendations. ARM discovers strong rules in database using different measures of associations. It discovers rules that determine groups of items that are connected. This project uses a publicly available E-commerce dataset found [here](https://www.kaggle.com/datasets/carrie1/ecommerce-data). 
 
-The ```Project_task_solutions.pdf``` contains further discussion about the bundle-recommendation system. 
-
 
 # Tutorial
 ## Requirements
